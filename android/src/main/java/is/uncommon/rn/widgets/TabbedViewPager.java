@@ -45,7 +45,7 @@ public class TabbedViewPager extends LinearLayout {
         return getId();
       }
     });
-    this.tabLayout = new TabLayout(reactContext);
+    this.tabLayout = new TabLayout(reactContext, null, R.style.MyCustomTextAppearance);
     this.tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
     LayoutParams viewPagerParams =
         new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT,
